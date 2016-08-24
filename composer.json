@@ -12,5 +12,8 @@
             "name": "Eric Bus",
             "email": "eric.bus@websight.nl"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": { "websightnl\\yii2yubikey\\": "" }
+    }
 }
