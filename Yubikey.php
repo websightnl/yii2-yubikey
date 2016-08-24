@@ -37,6 +37,18 @@ class Yubikey extends Component
      */
     public $firstIn = true;
 
+    public function init()
+    {
+        if (strlen($this->apiKey) === 0) {
+            throw new \yii\base\InvalidConfigException("Yubikey 'apiKey' configuration option is required");
+        }
+        if (strlen($this->clientId) === 0) {
+            throw new \yii\base\InvalidConfigException("Yubikey 'clientId' configuration option is required");
+        }
+
+        parent::init();
+    }
+
     public function validate($input)
     {
         $validator = new Validate($this->apiKey, $this->clientId);
