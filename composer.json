@@ -1,5 +1,5 @@
 {
-    "name": "websight/yii2-yubikey",
+    "name": "websightnl/yii2-yubikey",
     "description": "Component wrapper for the enygma/yubikey library",
     "version": "0.1.0",
     "require": {
